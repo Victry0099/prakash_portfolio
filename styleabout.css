@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    /* color: white; */
+  }
+  body{
+    color: white;
+    background-color: rgb(5, 5, 82);
+  }
+   
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 53px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: rgb(6, 4, 44);
+  }
+  .logo {
+    position: relative;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+  .navbar {
+    display: inline-block;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .navbar a {
+    display: inline-block;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+  }
+  .navbar a:hover {
+    color: aqua;
+    font-size: 22px;
+  }
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideTop {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideBottom {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  .aboutDetails{
+    margin-top: 100px;
+    margin:100px 50px 0px 50px;
+    font-size: 17px;
+    color: aliceblue;
+  }
+  .aboutDetails .about_para{
+     line-height: 1.6;
+       color: aliceblue;
+     margin: 1rem  0.5rem 0.5rem 2rem;
+     font-size: 1.1rem;
+     font-family:sans-serif;
+  }
+
+
+
+
+  footer .last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    font-weight: 300;
+    margin-top: 70px;
+    }
